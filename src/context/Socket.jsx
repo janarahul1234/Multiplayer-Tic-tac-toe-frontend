@@ -8,7 +8,7 @@ export const useSocket = () => {
 };
 
 export const SocketProvider = ({ children }) => {
-  const socket = useMemo(() => io("http://localhost:5000"), []);
+  const socket = useMemo(() => io("https://multiplayer-tic-tac-toe-backend-5oul.onrender.com"), []);
 
   return (
     <SocketContext.Provider value={socket}>{children}</SocketContext.Provider>
